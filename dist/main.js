@@ -1,5 +1,15 @@
 "use strict";
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 var Person_1 = require("./Person");
-var thisPerson = new Person_1.default(1, "호세", "개발자", true);
-console.log(thisPerson.name);
+var PersonStore_1 = require("./PersonStore");
+var thisPerson1 = new Person_1.default(1, "호세", "개발자", true);
+var thisPerson2 = new Person_1.default(2, "뭐", "개발자", true);
+var thisPerson3 = new Person_1.default(3, "요", "개발자", true);
+var thisPerson4 = new Person_1.default(4, "응애", "개발자", true);
+var personStore = new PersonStore_1.default(new Map);
+personStore.pushPerson(thisPerson1);
+personStore.pushPerson(thisPerson2);
+personStore.pushPerson(thisPerson3);
+personStore.pushPerson(thisPerson4);
+console.log((_a = personStore.getPerson(2)) === null || _a === void 0 ? void 0 : _a._name);
