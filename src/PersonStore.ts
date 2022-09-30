@@ -17,6 +17,14 @@ class PersonStore {
   getPerson(key: number) {
     return this.personArray.get(key);
   }
+  deletePerson(key: number) {
+    
+  }
+  showAllInfo() {    
+    this.personArray.forEach( (value, key, map) =>
+      console.log(value.getName() + "\n")
+    )
+  }
 }
 
 export default PersonStore;

@@ -16,6 +16,13 @@ var PersonStore = /** @class */ (function () {
     PersonStore.prototype.getPerson = function (key) {
         return this.personArray.get(key);
     };
+    PersonStore.prototype.deletePerson = function (key) {
+    };
+    PersonStore.prototype.showAllInfo = function () {
+        this.personArray.forEach(function (value, key, map) {
+            return console.log(value.getName() + "\n");
+        });
+    };
     return PersonStore;
 }());
 exports.default = PersonStore;

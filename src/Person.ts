@@ -1,14 +1,12 @@
 class Person implements PersonInterFace{
   constructor(
     public _id : number, 
-    public _name : string, 
-    public _job : string,
-    public _complete : boolean = false //default parameta (값 초기화)
+    public _name : string,
+    public _age: number,
   ) {
     this._id = _id;
     this._name = _name;
-    this._job = _job;
-    this._complete = _complete;
+    this._age = _age;
   }
   setId(id: number): void {
     this._id = id;
@@ -22,17 +20,11 @@ class Person implements PersonInterFace{
   getName(): string {
     return this._name;
   }
-  setJob(job: string): void {
-    this._job = job;
+  setAge(age: number): void {
+    throw new Error("Method not implemented.");
   }
-  getJob(): string {
-    return this._job;
-  }
-  setComplete(): void {
-    this._complete = !this._complete
-  }
-  getComplete(): boolean {
-    return this._complete;
+  getAge(): number {
+    throw new Error("Method not implemented.");
   }
 }
 
