@@ -1,8 +1,8 @@
 
-import Person from "./Person";
-import Planner from "./Planner";
-import SoftwareEnginer from "./SoftwareEnginer";
-import PersonStore from "./PersonStore";
+import Person from "./persons/Person";
+import Planner from "./persons/Planner";
+import SoftwareEnginer from "./persons/SoftwareEnginer";
+import PersonStore from "./persons/PersonStore";
 
 const thisPerson1: Person = new Planner(1, "호세", 26 );
 const thisPerson2: Person = new Planner(2, "민준", 25);

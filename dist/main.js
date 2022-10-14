@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Planner_1 = require("./Planner");
-var SoftwareEnginer_1 = require("./SoftwareEnginer");
-var PersonStore_1 = require("./PersonStore");
+var Planner_1 = require("./persons/Planner");
+var SoftwareEnginer_1 = require("./persons/SoftwareEnginer");
+var PersonStore_1 = require("./persons/PersonStore");
 var thisPerson1 = new Planner_1.default(1, "호세", 26);
 var thisPerson2 = new Planner_1.default(2, "민준", 25);
 var thisPerson3 = new SoftwareEnginer_1.default(3, "유선", 32);
