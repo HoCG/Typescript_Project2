@@ -1,15 +1,31 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Planner_1 = require("./persons/Planner");
-var SoftwareEnginer_1 = require("./persons/SoftwareEnginer");
-var PersonStore_1 = require("./persons/PersonStore");
-var thisPerson1 = new Planner_1.default(1, "호세", 26);
-var thisPerson2 = new Planner_1.default(2, "민준", 25);
-var thisPerson3 = new SoftwareEnginer_1.default(3, "유선", 32);
-var thisPerson4 = new SoftwareEnginer_1.default(4, "남순", 23);
-var personStore = new PersonStore_1.default(new Map);
+/*
+클래스 연습한 코드
+import Person from "./persons/Person";
+import Planner from "./persons/Planner";
+import SoftwareEnginer from "./persons/SoftwareEnginer";
+import PersonStore from "./persons/PersonStore";
+
+const thisPerson1: Person = new Planner(1, "호세", 26 );
+const thisPerson2: Person = new Planner(2, "민준", 25);
+const thisPerson3: Person = new SoftwareEnginer(3, "유선", 32);
+const thisPerson4: Person = new SoftwareEnginer(4, "남순", 23);
+const personStore: PersonStore = new PersonStore(new Map<number, PersonInterFace>);
+
 personStore.pushPerson(thisPerson1);
 personStore.pushPerson(thisPerson2);
 personStore.pushPerson(thisPerson3);
 personStore.pushPerson(thisPerson4);
 console.log(personStore.showAllInfo());
+*/
+var respond = function (userMessage, systemMessage) {
+    console.log(userMessage + ": " + systemMessage);
+};
+var UserResponse;
+(function (UserResponse) {
+    UserResponse[UserResponse["No"] = 0] = "No";
+    UserResponse[UserResponse["Yes"] = 1] = "Yes";
+})(UserResponse || (UserResponse = {}));
+;
+var run = function () { respond("나는", UserResponse.No); };
+run();

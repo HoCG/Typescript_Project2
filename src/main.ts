@@ -1,4 +1,6 @@
 
+/*
+클래스 연습한 코드
 import Person from "./persons/Person";
 import Planner from "./persons/Planner";
 import SoftwareEnginer from "./persons/SoftwareEnginer";
@@ -15,3 +17,4 @@ personStore.pushPerson(thisPerson2);
 personStore.pushPerson(thisPerson3);
 personStore.pushPerson(thisPerson4);
 console.log(personStore.showAllInfo());
+*/
