@@ -17,15 +17,4 @@ personStore.pushPerson(thisPerson2);
 personStore.pushPerson(thisPerson3);
 personStore.pushPerson(thisPerson4);
 console.log(personStore.showAllInfo());
-*/
-var respond = function (userMessage, systemMessage) {
-    console.log(userMessage + ": " + systemMessage);
-};
-var UserResponse;
-(function (UserResponse) {
-    UserResponse[UserResponse["No"] = 0] = "No";
-    UserResponse[UserResponse["Yes"] = 1] = "Yes";
-})(UserResponse || (UserResponse = {}));
-;
-var run = function () { respond("나는", UserResponse.No); };
-run();
+*/ 
